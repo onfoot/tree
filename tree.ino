@@ -10,7 +10,7 @@ void setup() {
   FastLED.setMaxPowerInVoltsAndMilliamps(5,100);
 }
 
-uint8_t thisdelay = 20;
+uint8_t thisdelay = 16;
 
 float hue=0;
 float vphase = 0.0;
@@ -29,9 +29,9 @@ void fill() {
   if (hue >= 255.0) {
     hue = 0;
   } else {
-    hue += 0.2;
+    hue += 0.4;
   }
   
-  vphase -= 0.3;
+  vphase -= 0.2;
 }
 
